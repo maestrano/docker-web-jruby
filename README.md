@@ -3,6 +3,7 @@ Docker image packed with jruby, git and nginx.
 
 [![Build Status](https://travis-ci.org/maestrano/docker-web-jruby.svg?branch=master)](https://travis-ci.org/maestrano/docker-web-jruby)
 
+
 ## Examples
 Launch a rails app from a public github repository
 ```
