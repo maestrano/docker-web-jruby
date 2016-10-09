@@ -36,8 +36,13 @@ RUN gem install \
   bcrypt-ruby:3.1.2 \
   bootstrap-sass:2.3.2.0 \
   bootstrap-will_paginate:0.0.9 \
+  config:1.1.1 \
+  connection_pool:2.2.0 \
+  deep_merge:1.0.1 \
   execjs:2.7.0 \
+  figaro:1.1.1 \
   foreman \
+  httparty:0.14.0 \
   jbuilder:1.0.2 \
   jbuilder:2.2.16 \
   jdbc-mysql \
@@ -45,25 +50,34 @@ RUN gem install \
   jdbc-sqlite3 \
   jquery-rails:3.0.4 \
   jquery-rails:4.1.1 \
+  kramdown:1.12.0 \
   newrelic_rpm:3.16.2.321 \
   mongoid:5.1.0 \
   mongoid-tree \
   mongoid-history \
+  money:6.7.1 \
+  money-rails:1.7.0 \
+  nokogiri:1.6.8 \
   puma:3.4.0 \
   puma:3.6.0 \
+  pusher:1.3.0 \
   rails:5.0 \
   rails:4.2.7.1 \
   rails_12factor:0.0.3 \
   rails_12factor:0.0.2 \
   rake:11.2.2 \
+  rake:11.3.0 \
+  redis-rails:5.0.1 \
   sass-rails:4.0.1 \
   sass-rails:5.0.6 \
+  sidekiq:4.2.1 \
   sparkpost:0.1.4 \
   sprockets:2.11.0 \
   therubyrhino \
   turbolinks:1.1.1 \
   uglifier:2.1.1 \
   uglifier:3.0.2 \
+  warden:1.2.6 \
   will_paginate:3.0.4 \
   --no-ri --no-rdoc --verbose
 
