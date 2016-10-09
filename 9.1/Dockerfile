@@ -69,7 +69,8 @@ RUN gem install \
 
 # Setup
 RUN mkdir -p /app /var/log/app \
-  && rm -f /etc/nginx/sites-enabled/*
+  && rm -f /etc/nginx/sites-enabled/* \
+  && chown -R www-data:www-data /app /var/log/app
 
 # Configuration
 COPY nginx.conf /etc/nginx/
