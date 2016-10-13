@@ -31,21 +31,29 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 
 # Install foreman and popular gems
 RUN gem install \
+  activemerchant:1.55.0 \
   activerecord-jdbc-adapter \
+  attr_encrypted:1.4.0 \
   coffee-rails:4.0.1 \
   bcrypt-ruby:3.1.2 \
   bootstrap-sass:2.3.2.0 \
   bootstrap-will_paginate:0.0.9 \
+  braintree:2.58.0 \
+  cancan:1.6.10 \
   config:1.1.1 \
   connection_pool:2.2.0 \
   deep_merge:1.0.1 \
+  encryptor:1.3.0 \
   execjs:2.7.0 \
   figaro:1.1.1 \
+  fog:1.37.0 \
   foreman \
+  geocoder:1.3.1 \
   httparty:0.14.0 \
   jbuilder:1.0.2 \
   jbuilder:2.2.16 \
   jdbc-mysql \
+  jdbc-mysql:5.1.38 \
   jdbc-postgres \
   jdbc-sqlite3 \
   jquery-rails:3.0.4 \
@@ -68,9 +76,12 @@ RUN gem install \
   rake:11.2.2 \
   rake:11.3.0 \
   redis-rails:5.0.1 \
+  ruby-openid:2.7.0 \
+  sass:3.4.21 \
   sass-rails:4.0.1 \
   sass-rails:5.0.6 \
   sidekiq:4.2.1 \
+  sidekiq-cron:0.4.3 \
   sparkpost:0.1.4 \
   sprockets:2.11.0 \
   therubyrhino \
