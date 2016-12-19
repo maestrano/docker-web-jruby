@@ -1,4 +1,4 @@
-FROM jruby:9.1.5
+FROM jruby:9.1.6
 
 # Install System libraries
 RUN apt-get update && apt-get install -y \
@@ -24,7 +24,7 @@ RUN set -ex \
   done
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 6.9.1
+ENV NODE_VERSION 7.2.1
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
@@ -37,7 +37,7 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 
 # Install foreman and popular gems
 RUN gem install \
-  activeadmin:1.0.0.pre2 \
+  activeadmin:1.0.0.pre4 \
   activemerchant:1.55.0 \
   activerecord-jdbc-adapter \
   activerecord-jdbcmysql-adapter:1.3.19 \
@@ -86,17 +86,16 @@ RUN gem install \
   mini_magick:4.1.0 \
   minitest:5.9.1 \
   myob-essentials-api:0.0.2 \
-  mongoid:5.1.0 \
+  mongoid:5.1.6 \
   mongoid-tree \
   mongoid-history \
   money:6.7.0 \
   money:6.7.1 \
   money-rails:1.6.0 \
   money-rails:1.7.0 \
-  newrelic_rpm:3.15.0.314 \
-  newrelic_rpm:3.16.2.321 \
+  newrelic_rpm:3.17.2.327 \
   nex_client:0.14.0 \
-  nokogiri:1.6.8 \
+  nokogiri:1.6.8.1 \
   oauth2:1.1.0 \
   puma:3.4.0 \
   puma:3.6.0 \
