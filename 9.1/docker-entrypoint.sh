@@ -5,6 +5,7 @@ set -e
 cd /app
 
 # Set default environment variables
+export FOREMAN_OPTS=${FOREMAN_OPTS:-""}
 export RACK_ENV=${RACK_ENV:-production}
 export RAILS_ENV=${RAILS_ENV:-production}
 export RAILS_LOG_TO_STDOUT=${RAILS_LOG_TO_STDOUT:-true}
@@ -47,6 +48,11 @@ fi
 
 # Update ownership
 chown -R www-data:www-data /app /var/log/app
+
+# Run post-deploy hook
+if [ -f /app/.post-deploy-hook ]; then
+  [ "$NO_HOOK" == "true" ] || bash /app/.post-deploy-hook
+fi
 
 # Perform command - default is "foreman start" (see Dockerfile)
 exec "$@"
