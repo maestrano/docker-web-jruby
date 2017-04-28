@@ -1,4 +1,4 @@
-FROM jruby:9.1.7
+FROM jruby:9.1.8
 
 # Install System libraries
 RUN apt-get update && apt-get install -y \
@@ -97,11 +97,11 @@ RUN gem install \
   nex_client:0.14.0 \
   nokogiri:1.6.8.1 \
   oauth2:1.1.0 \
-  puma:3.4.0 \
   puma:3.6.0 \
+  puma:3.7.0 \
   pusher:1.3.0 \
   rails:5.0 \
-  rails:4.2.7.1 \
+  rails:4.2.8 \
   rails_12factor:0.0.3 \
   rails_12factor:0.0.2 \
   rake:10.5.0 \
@@ -118,7 +118,7 @@ RUN gem install \
   sass-rails:4.0.1 \
   sass-rails:5.0.6 \
   sidekiq:4.1.0 \
-  sidekiq:4.2.1 \
+  sidekiq:4.2.10 \
   sidekiq-cron:0.4.3 \
   sinatra:1.4.7 \
   sparkpost:0.1.4 \
