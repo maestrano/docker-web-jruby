@@ -1,4 +1,4 @@
-FROM jruby:9.1.8
+FROM jruby:9.1.10
 
 # Install System libraries
 RUN apt-get update && apt-get install -y \
